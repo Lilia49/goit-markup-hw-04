@@ -96,6 +96,38 @@ img {
   color: var(--text-color);
 }
 
+.social-media-list {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-media-item {
+  width: 40px;
+  height: 40px;
+}
+
+.social-media-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+}
+
+.social-media-link:hover,
+.social-media-link:hover {
+  background-color: #31d0aa;
+}
+
+.social-media-icon {
+  fill: var(--brand-color-light);
+}
+
 /* HEADER  */
 .header {
   background-color: var(--white-color);
@@ -186,9 +218,20 @@ img {
 
 /* HERO  */
 .hero {
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/hero/people-office.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   background-color: var(--brand-color-dark);
+  max-width: 1440px;
   padding-top: 188px;
   padding-bottom: 188px;
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -244,14 +287,36 @@ img {
   gap: 24px;
 }
 
-.features-item {
+.features-card {
   flex-basis: calc((100%-72px) / 4);
+}
+
+.features-card-image {
+  background-color: var(--brand-color-light);
+  border-radius: 4px;
+  width: 100%;
+  height: 112px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.features-card-icon {
+  width: 64px;
+  height: 64px;
 }
 
 /* SERVICES  */
 .services {
   background-color: var(--white-color);
 }
+
+.services.section {
+  padding-top: 0;
+}
+
 .services-list {
   display: flex;
   gap: 24px;
@@ -293,7 +358,58 @@ img {
 .our-team .text {
   text-align: center;
   color: var(--text-color);
+  margin-bottom: 8px;
 }
+
+.our-team .social-media-icon {
+  width: 16x;
+  height: 16px;
+}
+
+/* CUSTOMERS  */
+
+.customers {
+  background-color: var(--white-color);
+}
+
+.cutomers-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
+  gap: 24px;
+}
+
+.cutomer-list-card {
+  flex-basis: calc((100%-120px) / 6);
+  height: 88px;
+}
+
+.cutomer-list-item {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8e8f99;
+}
+
+.customers-icon-logo {
+  width: 104px;
+  height: 56px;
+  fill: currentColor;
+}
+
+.cutomer-list-item:hover,
+.cutomer-list-item:focus {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
 /* / CONTENT  */
 
 /* FOOTER  */
@@ -303,6 +419,13 @@ img {
 
   background-color: var(--brand-color-dark);
 }
+
+.footer-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 120px;
+}
+
 .footer .logo {
   display: inline-block;
   margin-bottom: 16px;
@@ -319,6 +442,23 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--brand-color-light);
+}
+
+.footer-title-sm {
+  margin-bottom: 16px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  color: var(--white-color);
+}
+
+.footer .social-media-icon {
+  width: 24px;
+  height: 24px;
 }
 /* ======================== / MAIN PAGE ========================== */
 
@@ -383,4 +523,7 @@ img {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
+
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
