@@ -96,38 +96,6 @@ img {
   color: var(--text-color);
 }
 
-.social-media-list {
-  display: flex;
-  gap: 16px;
-  align-items: center;
-  justify-content: center;
-}
-
-.social-media-item {
-  width: 40px;
-  height: 40px;
-}
-
-.social-media-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 100%;
-  height: 100%;
-  background-color: var(--accent-color);
-  border-radius: 50%;
-}
-
-.social-media-link:hover,
-.social-media-link:hover {
-  background-color: #31d0aa;
-}
-
-.social-media-icon {
-  fill: var(--brand-color-light);
-}
-
 /* HEADER  */
 .header {
   background-color: var(--white-color);
@@ -135,6 +103,8 @@ img {
   padding-bottom: 24px;
 
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-container {
   display: flex;
@@ -303,11 +273,6 @@ img {
   margin-bottom: 8px;
 }
 
-.features-card-icon {
-  width: 64px;
-  height: 64px;
-}
-
 /* SERVICES  */
 .services {
   background-color: var(--white-color);
@@ -361,9 +326,36 @@ img {
   margin-bottom: 8px;
 }
 
-.our-team .social-media-icon {
-  width: 16x;
-  height: 16px;
+.social-media-list {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-media-item {
+  width: 40px;
+  height: 40px;
+}
+
+.social-media-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+}
+
+.social-media-link:hover,
+.social-media-link:hover {
+  background-color: #404bbf;
+}
+
+.social-media-icon {
+  fill: var(--brand-color-light);
 }
 
 /* CUSTOMERS  */
@@ -399,8 +391,6 @@ img {
 }
 
 .customers-icon-logo {
-  width: 104px;
-  height: 56px;
   fill: currentColor;
 }
 
@@ -422,7 +412,7 @@ img {
 
 .footer-container {
   display: flex;
-  align-items: flex-start;
+  align-items: baseline;
   gap: 120px;
 }
 
@@ -456,10 +446,14 @@ img {
   color: var(--white-color);
 }
 
-.footer .social-media-icon {
-  width: 24px;
-  height: 24px;
+.footer ..social-media-link {
+  background-color: var(--logo-color);
 }
+
+.footer ..social-media-link:hover {
+  background-color: #31d0aa;
+}
+
 /* ======================== / MAIN PAGE ========================== */
 
 /* ======================== PORTFOLIO PAGE ========================== */
@@ -523,7 +517,14 @@ img {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
+}
 
+.portfolio-card-link {
+  display: block;
+}
+
+.portfolio-card-link:hover,
+.portfolio-card-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
